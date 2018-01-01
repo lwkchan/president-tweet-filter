@@ -9,11 +9,11 @@ banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
 puts "Please input tweet."
 tweet = gets.chomp
 
-currentIndex = 0
-while currentIndex < banned_phrases.length
-  if tweet.include?(banned_phrases[currentIndex]) == true
+current_index = 0
+while current_index < banned_phrases.length
+  if tweet.include?(banned_phrases[current_index]) == true
      #replace found word in tweet with CENSORED
-     tweet.gsub!(banned_phrases[currentIndex],"CENSORED")
+     tweet.gsub!(banned_phrases[current_index],"CENSORED")
   end
   currentIndex += 1
 end
